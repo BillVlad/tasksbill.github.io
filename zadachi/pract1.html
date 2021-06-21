@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Работа с массивами</h1>
+        <h5>Discord: BillVLad#4499</h5>
+        <blockquote>
+            Примечание: откройте консоль! Открывается сочетанием клавиш <code>ctrl+shift+i</code><br />
+            или кликнув ПКМ по странице и найти пункт <q>Инспектировать</q><br />
+            (Касаемо Chrome-based браузеров).
+        </blockquote>
+        <hr>
+        <section class="pass">
+            <h3>Задача №1</h3>
+            <p>
+                У нас есть input с классом <code>.inp</code><br />
+                Задача: вывести напечатанный текст на элемент ".out"</p>
+            <input type="text" class="inp">
+            <p>Вывод:</p>
+            <textarea cols="20" rows="1" readonly class="out"></textarea>
+        </section>
+        <hr>
+        <section class="imgay">
+            <h3>Задача №2</h3>
+            <p>Есть input, выполняющий роль кнопки.<br />
+                Задача: Взять из этого элемента аттрибут alt и использовать в качестве источника<br /> создаваемую
+                картину по
+                нажатию input'а и вставить картинку в div <code>.outImg</code>.
+            </p>
+            <input type="image" src="../gfwithgun.jpg" width="100px" height="100px" alt="../enawithgun.png"
+                class="imgInp">
+            <div class="outImg"></div>
+        </section>
+        <hr>
+        <section>
+            <h3>Задача №3</h3>
+            <p>Дана форма <code>login</code> с input'ами. Эта форма служит входом в свой профиль.<br />
+                Задача: взять значение этих элементов и вывести их в консоль с видом:<br />
+                <code>
+                    Login: login<br />
+                    Password: password
+                </code>
+            </p>
+            <form name="login">
+                <input placeholder="login" type="text" name="login">
+                <input placeholder="password" type="password" name="pass">
+            </form>
+            <input id="sub" type="submit" value="Войти">
+        </section>
+        <hr>
+        <section>
+            <h3>Задача №4</h3>
+            <p>Возвращаемся к нашим баранам.<br />
+                Сейчас мы научимся работать с полями, не вызывая в функции их напрямую.<br />
+                Задача: использовать одну функцию для вывода напечатанного текста двух полей.<br />
+                Работаем с формой <code>lab</code><br />
+            </p>
+            <blockquote>Разрешается добавление ещё input'ов с типом text для проверки работы ф-ции</blockquote>
+            <form name="lab">
+                <input placeholder="label1" type="text" name='label1'>
+                <input placeholder="label2" type="text" name="label2">
+                <input placeholder="label3" type="text" name="label3">
+                <input placeholder="label4" type="text" name="label4">
+            </form>
+            <textarea placeholder="Вывод:" readonly cols="20" rows="1" class="outText"></textarea>
+        </section>
+        <hr>
+        <section>
+            <p>Аналогична прошлому, но здесь используется кнопки.<br />
+                Без формы.</p>
+            <button class="r" value="rick">LABEL1</button> <button class="a" value="astley">LABEL2</button>
+            <div class="outBut"></div>
+        </section>
+        <hr>
+        <section>
+            <h3>Задача №5</h3>
+            <p>Мы встераемся с input'ом типа range.<br />
+                Задача: вывести значения range на элемент <code>.rangeOut</code>.
+            </p>
+            <div class='rangeOut'>20%</div>
+            <input type="range" value="20" max="100" id="rageShadowLegends">
+        </section>
+        <hr>
+        <section>
+            <h3>Задача №6</h3>
+            <p>
+                Дан input с типом <code>date</code><br />
+                Взять его значения и вывести их в элемент <code>.outDate</code>
+            </p>
+            <blockquote>Примечание: формат даты в HTML5 нельзя менять. Он соответствует формату RFC 3339/ISO 8601
+                "проволочный формат": YYYY-MM-DD.</blockquote>
+            <input type="date" data-date="" data-date-format="DD MM YYYY" value="2001-01-01" id="da-1">
+            <input type="submit" id='su' value="sub">
+            <p>Вывод:</p>
+            <textarea placeholder="Здесь будет выведен результат" readonly class="outDate"></textarea>
+        </section>
+        <hr>
+        <a href="../index.html">Главная страница</a>
+        <hr>
+        <script src="../script.js"></script>
+    </div>
+</body>
+
+</html>

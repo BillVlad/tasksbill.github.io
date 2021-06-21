@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        html {
+            background: linear-gradient(#1100ff, black, yellow);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Работа с вложенными циклами</h1>
+        <h5>Discord: BillVLad#4499</h5>
+        <blockquote>
+            Примечание: откройте консоль! Открывается сочетанием клавиш <code>ctrl+shift+i</code><br />
+            или кликнув ПКМ по странице и найти пункт <q>Инспектировать</q><br />
+            (Касаемо Chrome-based браузеров).
+        </blockquote>
+        <hr>
+        <section>
+            <h2>Таблица умножения</h2>
+            <p>
+                Суть задачи состоит в том, что мы должны вывести таблицу умножения на экран.<br />
+                Писать в HTML - долго и муторно, поэтому мы будем использовать JS.<br />
+                Вывести нам нужно в элемент <code>.outTable</code>
+            </p>
+            <blockquote>
+                Используйте тэг <code>script</code> <br />
+                для написания кода в HTML
+            </blockquote>
+            <div id="outTable"></div>
+            <a href="../index.html">Главная страница</a>
+            <script>
+                let out = document.querySelector('#outTable');
+                for (i = 1; i < 10; i++) {
+                    for (k = 1; k < 10; k++) {
+                        out.innerHTML += `${i}*${k}=${i * k}<br>`
+                    }
+                    out.innerHTML += '<hr>'
+                }
+            </script>
+        </section>
+    </div>
+</body>
+
+</html>

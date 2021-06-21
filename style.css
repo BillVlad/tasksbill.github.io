@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    background: linear-gradient(to right, hsl(246, 100%, 50%) 50%, hsl(61, 100%, 50%) 50%);
+}
+body {
+    text-align: center;
+    max-width: 1200px;
+    box-sizing: border-box;
+    background-color: white;
+    margin: auto;
+}
+.content {
+    margin: 5px;
+}
+hr {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+blockquote {
+    background-color: blanchedalmond;
+    max-width: 300px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 5px;
+    border: 2px solid black;
+}
+textarea {
+    resize: none;
+    margin-top: 10px;
+    vertical-align: middle;
+}
